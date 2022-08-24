@@ -12,7 +12,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import precision_score, recall_score
 from sklearn.metrics import accuracy_score
 from sklearn.linear_model import LogisticRegression
-ef knn(x_train_kn,y_train_kn,x_test_kn,y_test_kn):
+def knn(x_train_kn,y_train_kn,x_test_kn,y_test_kn):
     n = KNeighborsClassifier(n_neighbors=9)
     n.fit(x_train_kn, y_train_kn)
     y_predict_kn = n.predict(x_test_kn)
